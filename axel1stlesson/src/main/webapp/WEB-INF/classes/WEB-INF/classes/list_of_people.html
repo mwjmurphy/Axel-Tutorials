@@ -1,0 +1,53 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:axel="http://www.xmlactions.org/pager_actions"
+	xsi:schemaLocation="http://www.xmlactions.org/pager_actions http://www.xmlactions.org/schema/pager_actions.xsd">
+	
+	<div class="panel panel-success">
+		<div class="panel-heading">
+			<h3 class="panel-title">Panel - file name = insert_a_page.html</h3>
+		</div>
+		<div class="panel-body">
+			<p>
+				This panel was inserted using <code>&lt;axel:insert page="${deployment.folder}/insert_a_page.html"/&gt;</code>
+			</p>
+			<p>
+				The file name is <code>insert_a_page.html</code>
+			</p>
+			<p>
+				<div class="alert alert-info" role="alert">
+					<strong>Note:</strong> The outer <code>html</code> element of the page have been
+					removed, so the final page is not cluttered with unnecessary content.
+				</div>
+			</p>						
+			
+		</div>
+	</div>
+	
+<!-- 	<axel:map_xml_to_json xml_filename="data/friends.xml" key="friends_json"/> -->
+<!-- 	<div>${friends_json}</div> -->
+	<axel:map_xml_to_presentation xml_path="friends/friend" xml_filename="data/friends.xml" srow_map_name="names">
+		<axel:form>
+			names:${names}
+			friend:${names:friend}
+			friend.firstName:${names:friend/firstName}
+			name:${names:friend}
+			name:${names:firstName}
+			age:${age}
+		</axel:form>
+	</axel:map_xml_to_presentation>
+	
+	<axel:log />
+	<axel:log key="names"/>
+	<axel:log key="row"/>
+	
+<!-- 	<axel:map_json_to_presentation json_path="persons" json_filename="data/friends.xml" sjson_ref="friends_json"> -->
+<!-- 		<axel:form> -->
+<!-- 			name:{name} -->
+<!-- 			age:{age} -->
+<!-- 			mobile:{mobile} -->
+<!-- 			address:{address} -->
+<!-- 		</form> -->
+<!-- 	</axel:map_json_to_presentation> -->
+	
+</html>

@@ -1,0 +1,49 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:axel="http://www.xmlactions.org/pager_actions"
+	xsi:schemaLocation="http://www.xmlactions.org/pager_actions http://www.xmlactions.org/schema/pager_actions.xsd">
+<head>
+	<!-- Only need one file for the head settings.  This can be inserted into other html files. -->
+	<axel:insert page="${deployment.folder}/modules/common/head.html" />
+</head>
+<body>
+
+
+	<div class="container">
+		<axel:insert page="${deployment.folder}/modules/main/main_carousel.html"/>
+		<axel:insert page="${deployment.folder}/modules/main/navbar.html"/>
+
+		<div id="set_content_here">
+
+			<axel:if expression="'${request:pagename}' == 'insert_page'">
+
+				<axel:insert page="${deployment.folder}/modules/insert_page/container.html"/>
+
+			<axel:elseif expression="'${request:pagename}' == 'json_friends'">
+				<axel:insert page="${deployment.folder}/modules/json_friends/container.html"/>
+			</axel:elseif>
+
+			<axel:elseif expression="'${request:pagename}' == 'xml_friends'">
+				<axel:insert page="${deployment.folder}/modules/xml_friends/container.html"/>
+			</axel:elseif>
+
+			<axel:elseif expression="'${request:pagename}' == 'logic'">
+				<axel:insert page="${deployment.folder}/modules/logic/container.html"/>
+			</axel:elseif>
+
+			<axel:elseif expression="'${request:pagename}' == 'code'">
+				<axel:insert page="${deployment.folder}/modules/code/container.html"/>
+			</axel:elseif>
+
+			<axel:else>
+				<axel:insert page="${deployment.folder}/modules/main/container.html"/>
+			</axel:else>
+
+			</axel:if>
+
+		</div>
+
+	</div>
+
+</body>
+</html>

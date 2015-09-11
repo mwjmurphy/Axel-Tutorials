@@ -1,0 +1,25 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:axel="http://www.xmlactions.org/pager_actions"
+	xsi:schemaLocation="http://www.xmlactions.org/pager_actions http://www.xmlactions.org/schema/pager_actions.xsd">
+	
+	<div class="panel panel-success">
+		<div class="panel-heading">
+			<h3 class="panel-title">Panel - file name = axel_code.html</h3>
+		</div>
+		<div class="panel-body">
+			<p>
+				Total Memory:<axel:code call="org.xmlactions.common.system.JS.getTotalMemory"/>
+			</p>
+			<p>
+				Used Memory:<axel:code call="org.xmlactions.common.system.JS.getUsedMemory"/>
+			</p>
+			<p>
+				Computer Name:
+				<axel:code call="org.xmlactions.common.system.JS.getEnv">
+					<axel:param value="COMPUTERNAME"/>
+				</axel:code>
+			</p>
+		</div>
+	</div>
+</html>

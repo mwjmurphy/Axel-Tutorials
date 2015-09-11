@@ -1,0 +1,44 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xmlns:axel="http://www.xmlactions.org/pager_actions"
+      xsi:schemaLocation="http://www.xmlactions.org/pager_actions http://www.xmlactions.org/schema/pager_actions.xsd">
+
+    <!--
+        Map an xml file to a presentation.
+     -->
+    <axel:put key="persistence:pagename">xml_friends</axel:put>
+    <div class="row">
+        <div class="col-xs-12">
+            <div align="left">
+                <h3><i>XML to Presentation HTML </i>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-10  col-xs-offset-1">
+            <p>
+                The following example displays a list of friends using <code>axel:map_xml_to_presentation</code>
+            </p>
+            <p>
+                The list is retrieved from an <b>XML</b> file on the server.
+            </p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-10 col-xs-offset-1">
+            <h4>Inserted Page <i>list_of_xml_friends.html</i></h4>
+        </div>
+        <div class="col-xs-10 col-xs-offset-1 border">
+            <axel:file_viewer file_name="${deployment.folder}/modules/xml_friends/list_of_xml_friends.html" show_line_nos ="true" escape_content="true"/>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-10 col-xs-offset-1">
+            <h4>Output from the page</i></h4>
+        </div>
+        <div class="col-xs-10 col-xs-offset-1">
+            <axel:insert page="${deployment.folder}/modules/xml_friends/list_of_xml_friends.html"/>
+        </div>
+    </div>
+
+</html>

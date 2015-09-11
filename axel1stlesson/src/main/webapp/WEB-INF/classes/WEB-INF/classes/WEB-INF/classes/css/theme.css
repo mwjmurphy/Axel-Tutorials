@@ -1,0 +1,41 @@
+
+
+/* FILE VIEWER */
+.file_view_header {
+	out_background-color: white;
+	color: firebrick;
+	border-top: 0px outset paleturquoise ;
+	border-left: 0px outset paleturquoise ;
+	border-bottom: 1px outset paleturquoise ;
+	border-right: 0px outset paleturquoise ;
+	font-family: Tahoma, Verdana, Arial, Helvetica, sans-serif; 
+	font-size: 12px;
+	padding:5px;
+	margin:0px;
+	height: 24px;
+}
+.file_view_line_no {
+	out_background-color: lightcyan;
+	color:#314D5B;
+	border-width: 0px;
+	border-right:1px outset paleturquoise ;
+	line-height: 18px;
+	font-family: Arial, Tahoma, Verdana, Helvetica, sans-serif;
+	font-size: 12px;
+	padding:0px;
+	margin:0px;
+	padding-left:3px;
+	padding-right:3px;
+}
+.file_view_content {
+	out_background-color: white;
+	color:#314D5B;
+	border-width: 0px;
+	line-height: 18px;
+	font-family: Arial, Tahoma, Verdana, Helvetica, sans-serif;
+	font-size: 12px;
+	padding:0px;
+	margin:0px;
+	padding-left:3px;
+}
+

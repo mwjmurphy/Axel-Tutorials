@@ -1,0 +1,152 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:axel="http://www.xmlactions.org/pager_actions"
+	xsi:schemaLocation="http://www.xmlactions.org/pager_actions http://www.xmlactions.org/schema/pager_actions.xsd">
+<head>
+	<!-- Only need one file for the head settings.  This can be inserted into other html files. -->
+	<axel:insert page="${deployment.folder}/head.html" />
+</head>
+<body>
+
+
+	<div class="container">
+		<axel:insert page="${deployment.folder}/main_carousel.html"/>
+		<div class="jumbotron">
+			<h1><img src="images/blocks.png" height="150px"/> AXEL Framework</h1>
+			<div class="alert alert-success" role="alert"><strong>Excellent!</strong> The 1st AXEL tutorial is up and running.</div>
+			<p>
+				This tutorial shows how to get AXEL up and running.  We've also included some of the AXEL actions to
+				show how easy it is to implement them on a html page.
+			</p>
+			<p>
+				For a full set of actions visit our web site <a href="http://xmlactions.org" target="_axel_framework">AXEL Framework</a>
+			</p>						
+		</div>
+
+		<!--
+			Insert the same page twice. 
+		 -->		
+		<div class="row">
+			<div class="col-xs-12">
+				<div align="left">
+					<h3><i>1. axel:insert</i></h3>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-xs-10  col-xs-offset-1">
+				<p>
+					The following example inserts a html page named <code>"insert_a_page.html"</code> into this html page.
+				</p>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-xs-10 col-xs-offset-1">
+				<axel:insert page="${deployment.folder}/insert_a_page.html"/>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-xs-10 col-xs-offset-1">
+				<h4>Inserted Page <i>insert_a_page.html</i></h4>
+			</div>
+			<div class="col-xs-10 col-xs-offset-1 border">
+ 				<axel:file_viewer file_name="${deployment.folder}/insert_a_page.html" show_line_nos ="true" escape_content="true"/>
+			</div>
+		</div>
+
+		<!--
+			Map a json file to a presentation.
+		 -->
+		<div class="row">
+			<div class="col-xs-12">
+				<div align="left">
+					<h3><i>2. axel:map_json_to_presentation</i></h3>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-xs-10  col-xs-offset-1">
+				<p>
+					The following example displays a list of friends.  The list is stored in a <b>JSON</b> file on the server.
+				</p>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-xs-10 col-xs-offset-1">
+				<axel:insert page="${deployment.folder}/list_of_json_friends.html"/>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-xs-10 col-xs-offset-1">
+				<h4>Inserted Page <i>list_of_json_friends.html</i></h4>
+			</div>
+			<div class="col-xs-10 col-xs-offset-1 border">
+				<axel:file_viewer file_name="${deployment.folder}/list_of_json_friends.html" show_line_nos ="true" escape_content="true"/>
+			</div>
+		</div>
+
+		<!--
+			Map an xml file to a presentation.
+		 -->
+		<div class="row">
+			<div class="col-xs-12">
+				<div align="left">
+					<h3><i>3. axel:map_xml_to_presentation</i>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-xs-10  col-xs-offset-1">
+				<p>
+					The following example displays a list of friends.  The list is stored in an <b>XML</b> file on the server.
+				</p>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-xs-10 col-xs-offset-1">
+				<axel:insert page="${deployment.folder}/list_of_xml_friends.html"/>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-xs-10 col-xs-offset-1">
+				<h4>Inserted Page <i>list_of_xml_friends.html</i></h4>
+			</div>
+			<div class="col-xs-10 col-xs-offset-1 border">
+				<axel:file_viewer file_name="${deployment.folder}/list_of_xml_friends.html" show_line_nos ="true" escape_content="true"/>
+			</div>
+		</div>
+
+		<!--
+			Some logic expressions
+		 -->
+		<div class="row">
+			<div class="col-xs-12">
+				<div align="left">
+					<h3><i>4. axel:if</i></h3>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-xs-10  col-xs-offset-1">
+				<p>
+					The following shows some examples of using the if, elseif and else logical expressions.
+				</p>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-xs-10 col-xs-offset-1">
+				<axel:insert page="${deployment.folder}/axel_logic.html"/>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-xs-10 col-xs-offset-1">
+				<h4>Inserted Page <i>axel_logic.html</i></h4>
+			</div>
+			<div class="col-xs-10 col-xs-offset-1 border">
+				<axel:file_viewer file_name="${deployment.folder}/axel_logic.html" show_line_nos ="true" escape_content="true"/>
+			</div>
+		</div>
+
+	</div>
+</body>
+</html>
