@@ -4,16 +4,83 @@
       xsi:schemaLocation="http://www.xmlactions.org/pager_actions http://www.xmlactions.org/schema/pager_actions.xsd">
     <axel:put key="persistence:pagename">main</axel:put>
     <div class="container">
-        <div class="jumbotron">
-            <h1><img src="images/blocks.png" height="150px"/> AXEL Framework</h1>
-            <div class="alert alert-success" role="alert"><strong>Excellent!</strong> The 1st AXEL tutorial is up and running.</div>
-            <p>
-                This tutorial shows how to get AXEL up and running.  We've also included some of the AXEL actions to
-                show how easy it is to implement them on a html page.
-            </p>
-            <p>
-                For a full set of actions visit our web site <a href="http://xmlactions.org" target="_axel_framework">AXEL Framework</a>
-            </p>
+        <div class="row">
+	        <div class="col-xs-10  col-xs-offset-1">
+	            <h1><img src="images/blocks.png" height="50px"/> AXEL Framework</h1>
+<!--             	<div class="alert alert-success" role="alert"><strong>Excellent!</strong> The 1st AXEL tutorial is up and running.</div> -->
+	            <p>
+	                Now that you've got the tutorial working you can use these links to see some of the AXEL Actions working.
+	            </p>
+	            <p>
+	                For a full set of actions visit our web site <a href="http://xmlactions.org" target="_axel_framework">AXEL Framework</a>
+	            </p>
+	        </div>
+	    </div>
+        <div class="row">
+	        <div class="col-xs-10  col-xs-offset-1">
+	        	<table>
+		        	<tr>
+		        		<td>
+		        			<a class="navbar-brand" href="javascript:loadAndDisplayPage('modules/insert_page/container.html?pagename=insert_page');" title="Insert a Page">
+	    	             		<img alt="Insert" src="images/insert.png" height="26px">
+	        	    		</a>
+	        	    	</td>
+		        		<td>
+		        			<a class="navbar-brand" href="javascript:loadAndDisplayPage('modules/insert_page/container.html?pagename=insert_page');" title="Insert a Page">
+	    	             		Insert a Page
+	        	    		</a>
+	        	    	</td>
+		        	</tr>
+		        	<tr>
+		        		<td>
+		        			<a class="navbar-brand" href="javascript:loadAndDisplayPage('modules/json_friends/container.html?pagename=json_friends');" title="Mapping JSON to Presentation">
+                				<img alt="JSON" src="images/json.png" height="26px">
+            				</a>
+	        	    	</td>
+		        		<td>
+		        			<a class="navbar-brand" href="javascript:loadAndDisplayPage('modules/json_friends/container.html?pagename=json_friends');" title="Mapping JSON to Presentation">
+                				Mapping JSON Data to HTML Presentation
+            				</a>
+	        	    	</td>
+		        	</tr>
+		        	<tr>
+		        		<td>
+							<a class="navbar-brand" href="javascript:loadAndDisplayPage('modules/xml_friends/container.html?pagename=xml_friends');" title="Mapping XML to Presentation">
+                				<img alt="XML" src="images/xml.png" height="26px">
+            				</a>
+	        	    	</td>
+		        		<td>
+							<a class="navbar-brand" href="javascript:loadAndDisplayPage('modules/xml_friends/container.html?pagename=xml_friends');" title="Mapping XML to Presentation">
+                				Mapping XML Data to HTML Presentation
+            				</a>
+	        	    	</td>
+		        	</tr>
+		        	<tr>
+		        		<td>
+				        	<a class="navbar-brand" href="javascript:loadAndDisplayPage('modules/logic/container.html?pagename=logic');" title="Logic using if, else and elseif">
+			                	<img alt="LOGIC" src="images/logic.png" height="26px">
+			            	</a>
+	        	    	</td>
+	        	    	<td>
+	        	    		<a class="navbar-brand" href="javascript:loadAndDisplayPage('modules/logic/container.html?pagename=logic');" title="Logic using if, else and elseif">
+	        	    			Applying some logic while Constructing a Page
+	        	    		</a>
+	        	    	</td>
+		        	</tr>
+		        	<tr>
+		        		<td>
+				        	<a class="navbar-brand" href="javascript:loadAndDisplayPage('modules/code/container.html?pagename=code');" title="Calling into your java code">
+			                	<img alt="CODE" src="images/java.jpg" height="26px">
+			            	</a>
+	        	    	</td>
+	        	    	<td>
+				        	<a class="navbar-brand" href="javascript:loadAndDisplayPage('modules/code/container.html?pagename=code');" title="Calling into your java code">
+			                	Call Java Code while Constructing a Page
+			            	</a>
+	        	    	</td>
+		        	</tr>
+	        	</table>
+            </div>
         </div>
     </div>
 </html>

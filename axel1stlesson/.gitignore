@@ -1,0 +1,12 @@
+# ignore all target folders
+**/target/
+
+# ignore all log files
+**/*.log
+**/*.log?
+
+# ignore all eclipse config files
+**/.settings/
+**/.classpath
+**/.project
+/axel-tutorial.log.1
