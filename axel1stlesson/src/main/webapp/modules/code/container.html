@@ -10,28 +10,47 @@
     <div class="row">
         <div class="col-xs-12">
             <div align="left">
-                <h3><i>Calling your Java Code</i></h3>
+                <h3><i>Calling Java Code</i></h3>
             </div>
         </div>
     </div>
     <div class="row">
         <div class="col-xs-10  col-xs-offset-1">
             <p>
-                The following shows an example of calling Java Code using <code>axel:code</code>
+                The following shows an example of calling Java Code using the <code>axel:code</code> action.
+            </p>
+            <p>
+                There are three code calls on the page which are:
+                <table>
+                	<tr>
+                		<td height="40px">Get Total Memory Available</td><td><code>&lt;axel:code call="org.xmlactions.common.system.JS.getTotalMemory"/&gt;</code></td>
+                	</tr>
+                	<tr>
+                		<td height="40px">Get Used Memory</td><td><code>&lt;axel:code call="org.xmlactions.common.system.JS.getUsedMemory"/&gt;</code></td>
+                	</tr>
+                	<tr>
+                		<td height="40px">Get Environment Variable</td>
+                			<td><code>&lt;axel:code call="org.xmlactions.common.system.JS.getEnv"&gt;<br/>&nbsp;&nbsp;&nbsp;
+										&lt;axel:param value="COMPUTERNAME"/&gt;<br/>
+									  &lt;/axel:code&gt;</code>
+							</td>
+                	</tr>
+                </table>
             </p>
         </div>
     </div>
     <div class="row">
         <div class="col-xs-10 col-xs-offset-1">
-            <h4>Inserted Page <i>axel_code.html</i></h4>
+            <p>This is the HTML page <i>axel_code.html</i> that shows the output from the java code calls.</p>
         </div>
         <div class="col-xs-10 col-xs-offset-1 border">
             <axel:file_viewer file_name="${deployment.folder}/modules/code/axel_code.html" show_line_nos ="true" escape_content="true"/>
         </div>
     </div>
+    <hr/>
     <div class="row">
         <div class="col-xs-10 col-xs-offset-1">
-            <h4>Output from the page</i></h4>
+            <h4>This is the display output from the page</i></h4>
         </div>
         <div class="col-xs-10 col-xs-offset-1">
             <axel:insert page="${deployment.folder}/modules/code/axel_code.html"/>
