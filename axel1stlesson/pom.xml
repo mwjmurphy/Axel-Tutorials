@@ -39,7 +39,7 @@
 		<dependency>
 			<groupId>org.xmlactions</groupId>
 			<artifactId>axelframework</artifactId>
-			<version>2.2.2</version>
+			<version>2.2.1</version>
 		</dependency>
 
 		<dependency>
@@ -167,7 +167,13 @@
 		</dependency>
 
 	</dependencies>
-	
+	<repositories>
+		<repository>
+		  <id>mysonatype</id>
+		  <name>Sonatype repository</name>
+		  <url>http://jarsm2.dyndns.dk</url>
+		</repository>
+	</repositories>
 	<build>
 		<finalName>tutorials_axel1stlesson</finalName>
 	</build>
