@@ -1,5 +1,0 @@
-<friends>
-    <friend firstName="John" lastName="Doe" age="21" mobile="555 5551" address="1 Main Street, Rock Ville"/>
-    <friend firstName="Anna" lastName="Smith" age="22" mobile="555 5552" address="2 Main Street, Rock Ville"/>
-    <friend firstName="Peter" lastName="Jones" age="23" mobile="555 5553" address="3 Main Street, Rock Ville"/>
-</friends>
